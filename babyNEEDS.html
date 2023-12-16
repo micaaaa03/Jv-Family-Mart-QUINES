@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Needs - JV FAMILY MART</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            letter-spacing: 2px;
+            padding: 0.5px;
+            background: orangered;
+        }
+
+        h2 {
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h3 {
+            font-family: sans-serif;
+        }
+
+        .container,
+        .containers,
+        .sky,
+        .chin {
+            display: flex;
+            font-family: sans-serif;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border: 2px solid black;
+            width: 60vh;
+            height: 25vh;
+            font-size: 15px;
+            margin-left: 5vh;
+            text-align: center;
+            margin-left: 4vh;
+        }
+
+        .m {
+            text-align: left;
+            margin-bottom: 4vh;
+            margin-right: 4vh;
+        }
+
+        .spans {
+            color: blue;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            float: right;
+            list-style: none;
+            margin-top: 30px;
+            min-width: 40px;
+            margin-right: 40px;
+            font-size: 16px;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.5 ease;
+        }
+
+        ul li a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        ul li.active a {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .logo img {
+            float: left;
+            width: 150 px;
+            height: auto;
+        }
+
+        .main {
+            max-width: 1200 px;
+            margin: auto;
+        }
+
+        .title {
+            position: absolute;
+            top: 46%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button {
+            position: absolute;
+            top: 57%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .btn {
+            border: 1px solid #fff;
+            padding: 5px 20px;
+            color: #fff;
+            transition: 0.5 ease;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .sub-menu {
+            display: none;
+            top: 6%;
+            position: relative;
+        }
+
+        .sub-menu ul {
+            position: absolute;
+        }
+
+        .main ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background-color: rgb(0, 45, 117);
+            margin-top: 12px;
+            margin-left: -8px;
+        }
+
+        .main ul li:hover .sub-menu ul {
+            display: block;
+            margin: 6px;
+        }
+
+        .main ul li:hover .sub-menu ul li {
+            width: 75px;
+            padding: 5px;
+            border-bottom: 1px #fff;
+            background: transparent;
+            transition: 0.4 ease;
+            text-align: left;
+            border-radius: 0px;
+        }
+
+        .container {
+            position: relative;
+            width: 1100 px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container .card {
+            position: relative;
+            max-width: 300px;
+            height: 215px;
+            background: #fff;
+            margin: 30px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            transition: ease-in-out;
+        }
+
+        .container .card:hover {
+            height: 420px;
+        }
+
+        .container .card .imgBx {
+            position: relative;
+            width: 260px;
+            height: 260px;
+            top: -60px;
+            left: 20px;
+            z-index: 1;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .container .card .imgBx img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+        .container .card .content {
+            position: relative;
+            margin-top: -140px;
+            padding: 10px 15px;
+            text-align: center;
+            color: #111;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3 ease-in-out;
+        }
+
+        .container .card:hover .content {
+            visibility: visible;
+            opacity: 1;
+            margin-top: -40px;
+            transition-delay: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="../logo.png">
+            </div>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../Plastic Ware/plasticWARE.html">Plastic Wares</a></li>
+                <li><a href="../Musical Accessories/musicalACCESSORIES.html">Musical Accessories</a></li>
+                <li><a href="../Frozen Goods/frozenGOODS.html">Frozen Goods</a></li>
+                <li><a href="../School Supplies/schoolSUPPLIES.html">School Supplies</a></li>
+                <li><a href="../Cleaning Supplies/cleaningSUPPLIES.html">Cleaning Supplies</a></li>
+                <li><a href="../Clothing/clothing.html">Clothing</a></li>
+                <li><a href="../Boutique/boutique.html">Boutique</a></li>
+                <li><a href="#">Other</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="babyNEEDS.html">Baby Needs</a></li>
+                            <li><a href="../Beverages/beverages.html">Beverages</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <h1>BABY NEEDS</h1>
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="bonna.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Bonna Infant Formula</h2>
+                <p>
+                    Provide essential especially formulated for
+                    infants aged 0-6 months.
+                    <br>Price: ₱199.99
+                    <br>Product Code: BONNA-INFANT-180G
+                    <br>Stock: 100
+                </p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="pacifier.webp" alt="">
+            </div>
+            <div class="content">
+                <h2>Pacifier</h2>
+                <p>
+                    Soothe your baby with our high-quality pacifier, designed for comfort and safety.
+                    <br>Price: ₱49.99
+                    <br>Product Code: PACIFIER-123
+                    <br>Stock: 200 units available
+                </p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="pampers.webp" alt="">
+            </div>
+            <div class="content">
+                <h2>Pampers Diapers - Newborn Size</h2>
+                <p>
+                    Quantity: 50 diapers per pack
+                    <br>Size: Newborn (up to 5kg)
+                    <br>Price: ₱349.99
+                    <br>Product Code: PMPRNWBRN131
+                    <br>Stock: 328
+                </p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="teether.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Baby Teether</h2>
+                <p>
+                    Material: BPA-free Silicone
+                    <br>Price: ₱99.99
+                    <br>Product Code: TEETHER2023-SOFT
+                    <br>Stock: 8237
+                </p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="babySET.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Baby Gift Set</h2>
+                <p>
+                    Contents: Mini Bear, Socks, Infant Onesie
+                    <br>Material: Soft Cotton
+                    <br>Price: ₱299.99
+                    <br>Product Code: BABYSET2023-ADORABLE
+                    <br>Stock: 134
+                </p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
