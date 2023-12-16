@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart and Checkout - JV FAMILY MART</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background: url(logo.png);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .cart-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgb(255, 227, 227);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .checkout-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .checkout-btn:hover {
+            background-color: #a06645;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Shopping Cart and Checkout</h1>
+    </header>
+
+    <div class="cart-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ginebra San Miguel</td>
+                    <td>599.99</td>
+                    <td>1</td>
+                    <td>599.99</td>
+                </tr>
+                <tr>
+                    <td>Alcohol</td>
+                    <td>49.99</td>
+                    <td>1</td>
+                    <td>49.99</td>
+                </tr>
+                <tr>
+                    <td>Professional Drums Set</td>
+                    <td>39,999.99</td>
+                    <td>1</td>
+                    <td>39,999.99</td>
+                </tr>
+                <tr>
+                    <td>Kids Terno Pajama</td>
+                    <td>299.99</td>
+                    <td>1</td>
+                    <td>299.99</td>
+                </tr>
+                <tr>
+                    <td>Women's Parachute Pants</td>
+                    <td>249.99</td>
+                    <td>1</td>
+                    <td>249.99</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button><a href="checkout.html" class="checkout-btn">Proceed to Checkout</a></button>
+        <button><a href="home.html" class="checkout-btn">Back to Home</a></button>
+    </div>
+</body>
+
+</html>

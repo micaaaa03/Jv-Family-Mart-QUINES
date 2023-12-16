@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JV FAMILY MART</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background: url('labas.png') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        float: right;
+        list-style: none;
+        margin-top: 30px;
+        min-width: 40px;
+        margin-right: 40px;
+        font-size: 16px;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border: 1px solid;
+        transition: 0.5 ease;
+    }
+
+    ul li a:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    ul li.active a {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .logo img {
+        float: left;
+        width: 150 px;
+        height: auto;
+    }
+
+    .main {
+        max-width: 1200 px;
+        margin: auto;
+    }
+
+    .title {
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .title h1 {
+        color: #fff;
+        font-size: 70px;
+        padding: 0.5px;
+        background: linear-gradient(
+            to bottom, 
+            transparent 50%,
+            orangered
+        )
+    }
+
+    .button {
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .btn {
+        border: 1px solid #fff;
+        padding: 5px 20px;
+        color: #fff;
+        transition: 0.5 ease;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .sub-menu {
+        display: none;
+        top: 6%;
+        position: relative;
+    }
+
+    .sub-menu ul {
+        position: absolute;
+    }
+
+    .main ul li:hover .sub-menu {
+        display: block;
+        position: absolute;
+        background-color: rgb(0, 45, 117);
+        margin-top: 12px;
+        margin-left: -8px;
+    }
+
+    .main ul li:hover .sub-menu ul {
+        display: block;
+        margin: 6px;
+    }
+
+    .main ul li:hover .sub-menu ul li {
+        width: 75px;
+        padding: 5px;
+        border-bottom: 1px #fff;
+        background: transparent;
+        transition: 0.4 ease;
+        text-align: left;
+        border-radius: 0px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Plastic Ware/plasticWARE.html">Plastic Wares</a></li>
+                <li><a href="Musical Accessories/musicalACCESSORIES.html">Musical Accesories</a></li>
+                <li><a href="Frozen Goods/frozenGOODS.html">Frozen Goods</a></li>
+                <li><a href="School Supplies/schoolSUPPLIES.html">School Supplies</a></li>
+                <li><a href="Cleaning Supplies/cleaningSUPPLIES.html">Cleaning Supplies</a></li>
+                <li><a href="Clothing/clothing.html">Clothing</a></li>
+                <li><a href="Boutique/boutique.html">Boutique</a></li>
+                <li><a href="#">Other</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="Baby Needs/babyNEEDS.html">Baby Needs</a></li>
+                            <li><a href="Beverages/beverages.html">Beverages</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>JV Online Mart</h1>
+        </div>
+
+        <div class="button">
+            <a href="seeDETAILS.html" class="btn">See Details</a>
+            <a href="description.html" class="btn">Description</a>
+            <a href="seeMORE.html" class="btn">See More</a>
+            <br>
+            <br>
+            <center><a href="cart.html" class="btn">CART</a></center>
+        </div>
+    </header>
+</body>
+
+</html>
